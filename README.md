@@ -15,17 +15,25 @@ A device that helps monitor and automate basic aquarium/ fish tank needs
   - Water Cleaning/ Maintenance
   
 ### Platform ###
-- ESP8266 for sensor data and relay trigger
-- HomeAssistant for schedule orchestration and notifications
+- [ESPHome](https://esphome.io) for sensor data and relay trigger
+- [HomeAssistant](https://www.home-assistant.io) for schedule orchestration and notifications
 
-### Device ###
-I had a NodeMCU lying in my inbox so that's what I used.
+
+### Requirements ###
+- NodeMCU or other ESP based device - generally available. I had a NodeMCU lying in my inbox so that's what I used.
+- Relay board (one relay per function you'd like to monitor/conrol). Got mine from local Bulgarian web shop [radev96.com](https://radev96.com)
+- A 'dallas' DS18B20 single wire temperature sensor - despite the name it comes with 3 wires - V+,V-, Data
+- A number of dupont wires available from your local maker's store or online
+- A 5V Power Supply unit that will supply power to the NodeMCU
+- One power outlet per relay (in my case I also inluded an extra one that is always on for air supply). A power strip might also do the job if you have one in which outlets can be powered off individually
+- A box to put all these items in
+
+### Assembly ###
+
 Safe pins for relays: GPIO 4, 5, 12, 13, 14 (see ref. 1)
 Temperature sensor: GPIO 2/D4 (see ref. 2)
 
-### Requirements ###
-- NodeMCU or other ESP based device - generally available
-- Relay board (one relay per function you'd like to monitor/conrol). Got mine from local Bulgarian web shop [radev96.com](https://radev96.com)
+
 
 ### Future Development ###
 - Moisture/Water Insulation - kids, fish, fishtanks, water, electricity…
