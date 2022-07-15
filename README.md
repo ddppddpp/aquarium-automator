@@ -4,10 +4,10 @@ A device that helps monitor and automate basic aquarium/ fish tank needs
 
 - Monitor
   - Temperature
-  - Water quality (ph?)
+
 - Automations
-- relay triggering
-- thermostat
+  - relay triggering
+  - thermostat
 - light schedule
   - fixed schedule
 - Various reminders for chores, i.e.
@@ -31,7 +31,7 @@ Temperature sensor: GPIO 2/D4 (see ref. 2)
 - Moisture/Water Insulation - kids, fish, fishtanks, water, electricity…
 - micro-usb port exposure for potential serial connection without the need for disassembly
 - variable schedule (i.e. gradually increase the light hours from 6 to 8 over a period of 3 months)
-
+- Monitor water quality (ph?)
 
 ### References ###
 1. [ESP8266 Relay](https://randomnerdtutorials.com/esp8266-relay-module-ac-web-server/)
