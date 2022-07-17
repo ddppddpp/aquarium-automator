@@ -1,3 +1,4 @@
+# Light Automation #
 Start by creating a light schedule using the Home Assistant Times of Day helper as shown in [light schedule](light_schedule.md), then create a basic 'turn on' automaiton using the GUI or yaml:
 
 ```
