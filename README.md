@@ -9,7 +9,7 @@ A device that helps monitor and automate basic aquarium/ fish tank needs
   - relay triggering
   - thermostat
 - light schedule
-  - fixed schedule
+  - fixed schedule - start by creating a [light schedule](light_schedule.md) in Home Assistant then add automations to use it.
 - Various reminders for chores, i.e.
   - Feeding
   - Water Cleaning/ Maintenance
