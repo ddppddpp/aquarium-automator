@@ -1,4 +1,4 @@
-# aquarium-automator
+# Aquarium Automator
 A device that helps monitor and automate basic aquarium/ fish tank needs
 
 
@@ -23,15 +23,28 @@ A device that helps monitor and automate basic aquarium/ fish tank needs
 - NodeMCU or other ESP based device - generally available. I had a NodeMCU lying in my inbox so that's what I used.
 - Relay board (one relay per function you'd like to monitor/conrol). Got mine from local Bulgarian web shop [radev96.com](https://radev96.com)
 - A 'dallas' DS18B20 single wire temperature sensor - despite the name it comes with 3 wires - V+,V-, Data
-- A number of dupont wires available from your local maker's store or online
-- A 5V Power Supply unit that will supply power to the NodeMCU
+- A number of Dupont or jumper wires available from your local maker's store or online
+- A 5V power supply unit that will supply power to the NodeMCU. Alternatively, you can use a power adapter as seen in the first picture.
 - One power outlet per relay (in my case I also inluded an extra one that is always on for air supply). A power strip might also do the job if you have one in which outlets can be powered off individually
+- Pieces of wire to connect the relays to the power outlets
 - A box to put all these items in
+![requirements](images/light_schedule_4.jpg)
 
 ### Assembly ###
 
+Using dupon wires connect the relays and temperature sensors to the NodeMCU.
+
 Safe pins for relays: GPIO 4, 5, 12, 13, 14 (see ref. 1)
+
 Temperature sensor: GPIO 2/D4 (see ref. 2)
+![connected pins](images/light_schedule_6.jpg)
+
+Connect the relays to the power outlets and try to fit everything in the box.
+![box](images/light_schedule_8.jpg)
+
+Connect the light, air pump and thermostat to the respective power outlets.
+![action](images/IMG_1323.jpg)
+
 
 
 
