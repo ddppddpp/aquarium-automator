@@ -6,8 +6,7 @@ A device that helps monitor and automate basic aquarium/ fish tank needs
   - [Temperature](temperature_monitor.md)
 
 - Automations
-  - relay triggering
-  - thermostat
+  - relay triggering - for [light](light_automation.md) and temperature.
   - notifications
 - light schedule
   - fixed schedule - start by creating a [light schedule](light-schedule.md) in Home Assistant then add [automations](light_automation.md) to use it.
