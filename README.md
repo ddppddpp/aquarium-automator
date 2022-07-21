@@ -27,7 +27,8 @@ A device that helps monitor and automate basic aquarium/ fish tank needs
 - A 5V power supply unit that will supply power to the NodeMCU. Alternatively, you can use a power adapter as seen in the first picture.
 - One power outlet per relay (in my case I also inluded an extra one that is always on for air supply). A power strip might also do the job if you have one in which outlets can be powered off individually
 - Pieces of wire to connect the relays to the power outlets
-- A box to put all these items in
+- A box to put all these items in - the box can be quite tricky. The one shown in my picture is actually the 3rd I've tried and I'm not entirely happy. While it fits the NodeMCU, Relay board and wires, I'll try to find one that would allow me to put the power outlets inside and insulate as much as possible to prevent water/electricity contact.
+
 ![requirements](images/light_schedule_4.jpg)
 
 ### Assembly ###
