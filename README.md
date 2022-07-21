@@ -15,7 +15,7 @@ A device that helps monitor and automate basic aquarium/ fish tank needs
   - Water Cleaning/ Maintenance
   
 ### Platform ###
-- [ESPHome](https://esphome.io) for sensor data and relay trigger
+- [ESPHome](https://esphome.io) for sensor data and relay trigger. You can check the simple yaml code needed [here](aquarium-automator.yaml)
 - [HomeAssistant](https://www.home-assistant.io) for schedule orchestration and notifications
 
 
