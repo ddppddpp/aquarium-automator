@@ -7,7 +7,7 @@ A device that helps monitor and automate basic aquarium/ fish tank needs
 
 - Automations
   - relay triggering - for [light](light_automation.md) and temperature.
-  - notifications
+  - notifications - when the [temperature](notify_temperature.md) is not right
 - light schedule
   - fixed schedule - start by creating a [light schedule](light-schedule.md) in Home Assistant then add [automations](light_automation.md) to use it.
 - Various reminders for chores, i.e.
@@ -48,11 +48,12 @@ Connect the light, air pump and thermostat to the respective power outlets.
 
 
 
-### Future Development ###
+### Future Development / ToDo's ###
 - Moisture/Water Insulation - kids, fish, fishtanks, water, electricity…
 - micro-usb port exposure for potential serial connection without the need for disassembly
 - variable schedule (i.e. gradually increase the light hours from 6 to 8 over a period of 3 months)
 - Monitor water quality (ph?)
+- Add some buttons that can trigger the relays manually
 
 ### References ###
 1. [ESP8266 Relay](https://randomnerdtutorials.com/esp8266-relay-module-ac-web-server/)
