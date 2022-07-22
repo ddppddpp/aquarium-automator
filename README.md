@@ -92,8 +92,9 @@ Connect the light, air pump and thermostat to the respective power outlets.
 
 ### Future Development / ToDo's ###
 - Moisture/Water Insulation - kids, fish, fishtanks, water, electricity…
-- micro-usb port exposure for potential serial connection without the need for disassembly
-- variable schedule (i.e. gradually increase the light hours from 6 to 8 over a period of 3 months)
+- Actually connect the thermostat to the 2nd relay and come up with an automation that stars it when needed. Right now it is too hot where I leave
+- Micro-usb port exposure for potential serial connection without the need for disassembly
+- Variable schedule (i.e. gradually increase the light hours from 6 to 8 over a period of 3 months)
 - Monitor water quality (ph?)
 - Add some buttons that can trigger the relays manually
 
