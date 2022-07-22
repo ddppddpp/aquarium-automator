@@ -40,6 +40,47 @@ Safe pins for relays: GPIO 4, 5, 12, 13, 14 (see ref. 1)
 Temperature sensor: GPIO 2/D4 (see ref. 2)
 ![connected pins](images/light_schedule_6.jpg)
 
+The wiring itself is pretty easy, far simpler than the ASCII diagram below.
+
+```
+
+
+            ____________________                              _________        
+     ADC0  -|                   |-  GPIO16                    |       |
+      RES  -|                   |-  GPIO5                     |DS18B20| 
+      RES  -|                   |-  GPIO4                     |       |
+   GPIO10  -|    NodeMCU        |-  GPIO0             DATA    ---------
+    GPIO9  -|                   |-  GPIO2 ____________________|  |GND | VCC     
+     MOSI  -|                   |-  3.3V                         |    |
+       CS  -|                   |-  GND                          |    |
+     MISO  -|                   |-  GPIO14 --------   IN1        |    |
+     SCLK  -|                   |-  GPIO12 --------   IN2        |    |
+      GND  -|                   |-  GPIO13                       |    |
+     3.3V  -|                   |-  GPIO15                       |    |
+       EN  -|                   |-  GPIO3                        |    |
+      RST  -|                   |-  GPIO1                        |    |
+   -- GND  -|                   |-  GND  ____*___________________|____u___
+  |   Vin  -|___________________|-  3.3V ____u______*_________________|       
+  |       |                         _________|      |                         
+  |______ u___________________      |   ____________|                        
+          |_________________  |     |  | ________________________        
+                           |  |     |  -|   VCC             NO  | 
+         ____________  VCC |  |  GPIO12-|   IN2  REL1       COM |--------|
+    L   |            | ----|  |  GPIO14-|   IN1             NC  |--L1    |
+  ----- |    PSU     | 5V     |    |--- |   GND                 |        |
+  | --- |            | GND    |         |   GND             NO  |        |
+  | | N |____________| -------          |   VCC  REL2       COM |--------|
+  | |                                   |   JD-VCC          NC  |--L2    |
+  | |                                   -------------------------        |
+  | |___________________________________________________________________ u__* N
+  |                                           |       |       |          |
+  |                                           *       *       *          |
+  |                               OUTPUT  L1  N   L2  N   L3  N          |  220V
+  |                                                       |              |
+  |_______________________________________________________|______________|___* L 
+  ```
+
+
 Connect the relays to the power outlets and try to fit everything in the box.
 ![box](images/light_schedule_8.jpg)
 
